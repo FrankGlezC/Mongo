@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Shchema =mongoose.schema;
+const Schema =mongoose.Schema;
 
 const UserSchema = new Schema({
     name:{
@@ -20,7 +20,7 @@ const UserSchema = new Schema({
  
 const newUserSchema = new Schema();
 //modify a schema
-newUserSchema.add(UserSchema),add({ 
+newUserSchema.add(UserSchema).add({ 
     hasPet:{
         type: Boolean
     }
